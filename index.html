@@ -15,9 +15,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Redirect Code -->
-    <meta http-equiv="refresh" content="0; url=https://github.com/Marios-Mamalis/" />
+<!--     <meta http-equiv="refresh" content="0; url=https://github.com/Marios-Mamalis/" /> -->
 
     <title>Please wait...</title>
+    
+    <script>
+      var redirDict = {
+          'mainPage': 'https://github.com/Marios-Mamalis/',
+      }
+      var redirect = new URL(window.location).searchParams.get('utm_content');
+      if (redirect) window.location = redirect;
+    </script>
+
     
 </head>
 <body>
