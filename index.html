@@ -1,5 +1,11 @@
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Please wait...</title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89ZVKV138E"></script>
     <script>
@@ -9,27 +15,27 @@
 
       gtag('config', 'G-89ZVKV138E');
     </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Redirect Code -->
-<!--     <meta http-equiv="refresh" content="0; url=https://github.com/Marios-Mamalis/" /> -->
-
-    <title>Please wait...</title>
     
+    <!-- Redirection -->
     <script>
       var redirDict = {
           'mainPage': 'https://github.com/Marios-Mamalis/',
+          'cert_dataAnalysisWithPythonByFreeCodeCamp': 'https://freecodecamp.org/certification/marios_mamalis/data-analysis-with-python-v7',
+          'cert_NanodegreeByUdemy': 'http://ude.my/UC-ce62de85-769c-4706-bd61-9f896c037c9a',
+
       }
       var redirect = new URL(window.location).searchParams.get('utm_content');
+      redirect = redirDict[redirect]
       if (redirect) window.location = redirect;
+
+      var link = document.getElementById("nojslink");
+      link.setAttribute('href', redirect);
     </script>
 
     
 </head>
 <body>
     <p>Please wait...</p>
+    <p>If you weren't redirected automatically <a id="nojslink" href="">click here</a></p>
 </body>
 </html>
