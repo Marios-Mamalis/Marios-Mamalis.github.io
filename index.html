@@ -35,7 +35,7 @@
           'prj_flights': 'https://github.com/Marios-Mamalis/flights',
           'prj_mcaVisualization': 'https://github.com/Marios-Mamalis/visualisation-of-mca-results-from-factominer-using-plotly'
       }
-      var redirect = new URL(window.location).searchParams.get('utm_campaign');
+      var redirect = new URL(window.location).searchParams.get('utm_content');
       redirect = redirDict[redirect]
       if (redirect) window.location = redirect;
 
